@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust</title>
+</head>
+<body>
+    <h3>All Listings</h3>
+
+    <% if (allListings && allListings.length > 0) { %>
+        <ul>
+            <% for(let listing of allListings) { %>
+                <li>
+                    <h4><%= listing.title %></h4>
+                </li>
+            <% } %>
+        </ul>
+    <% } else { %>
+        <p>No listings found.</p>
+    <% } %>
+</body>
+</html>
